@@ -58,6 +58,22 @@
         .myDiv > span{
             color: blue; font-size: 14px;
         }
+
+        #bas {
+            color: #664599; font-size: 26px;
+        }
+
+        .multi h2, .multi h3, .multi h4 {
+            color: blue;
+        }
+
+        li .myclass {
+            color: yellow;
+        }
+
+        li.myclass {
+            color: red;
+        }
     </style>
 </head>
 <body>
@@ -71,13 +87,31 @@
         저의 <span class="negative">단점</span>은
             <span class="negative">지저분한 스타일</span> 입니다.<br>
     </div>
-
+    
     <h2>하위선택자 및 자식선택자</h2>
     <div class="myDiv">
         <span>div 태그안의 span태그[myDiv의 하위태그 & 자식태그]</span>
         <fieldset>
             <span>fieldset 태그안의 span태그[myDiv의 하위태그]</span>
         </fieldset>
+    </div>
+
+    <h2>아이디 선택자</h2>
+    <ul>
+        <li class="myclass">
+            축구
+            <span class="myclsss">[난 노랑]</span>
+        </li>
+        <li id="bas">농구</li>
+        <li class="myclass">배구</li>
+    </ul>
+
+    <h2>다중 선택자</h2>
+    <div class="multi">
+        <h2>제목1</h2>
+        <h3>제목2</h2>
+        <h4>제목3</h2>
+        <h5>제목4</h2>
     </div>
 </body>
 </html>
