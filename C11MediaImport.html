@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C11MediaImport.html</title>
+    <style>
+        /* 
+        @import
+            - link태그를 대체할 수 있다.
+            - style태그안에서 사용해야 하고 반드시 최상단에 선언해야 한다.
+            - CSS파일에 오류가 있는 경우 다운로드 하지 않는다.
+        */
+        @import url('./style/import.css');
+        .content {
+            background-color: black; color: red;
+        }
+
+        /* 
+        @media
+            - 해당 웹페이지를 디바이스의 종류에 따라 각각 다르게 화면을
+            구성할 수 있도록 해준다.
+            - 스크린(모니터)용과 프린터(출력물)용으로 구분할 수 있다.
+        */
+        @media screen {
+            .content { /* 스크린에서는 배경색은 검은바탕에 흰색글씨로 출력된다. */
+                background-color: black; color: white;
+            }
+        }
+
+        @media print {
+            .content { /* 출력했을때는 배경색은 붉은바탕에 노란색글씨로 출력된다. */
+                background-color: red; color: yellow;
+            }
+        }
+
+        /* 
+            모든 웹브라우저는 배경색 출력을 허용하지 않는다. 허용하려면 인쇄 설정으로
+            들어가서 "배경색 인쇄"를 체크해야 한다.
+        */
+    </style>
+</head>
+<body>
+    <h2>media 속성</h2>
+    <div class="content">
+        <p>
+            <h3>유아인, 부모님 최초 공개…엄마아빠 앞에선 그저 귀여운 아들 "사랑해요♥"</h3>
+            
+            [스포츠조선닷컴 김수현기자] 배우 유아인이 부모님의 안녕을 빌었다.
+            <br>
+            유아인은 8일 자신의 SNS에 "엄마 아빠 사랑해요. 몸 건강히 마음 편히 지내요. 소원입니다"라며 사진을 게재했다.
+            <br>
+            사진에는 늦은 밤 어머니 아버지와 함께 하고 있는 유아인의 모습이 담겼다.
+            <br>
+            유아인은 당당하고 자신감 넘치는 평소 모습과 달리 어머니 아버지 앞에서는 그저 귀여운 아들의 모습으로 돌아갔다.
+            <br>
+            특히 유아인은 나이가 들어도 자신을 챙겨주는 부모님에게 건강을 기원하는 효자의 모습을 보였다.
+            <br>
+            한편 유아인이 출연하는 넷플릭스 오리지널 '지옥'은 제46회 토론토 국제영화제 프라임타임 부문에 초청받았다.
+            <br>
+            shyun@sportschosun.com
+        </p>
+    </div>
+</body>
+</html>
